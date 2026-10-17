@@ -1,0 +1,10 @@
+mapscripts Route101_Scorched_MapScripts {}
+
+script Route101_Scorched_EventScript_Rift {
+    lockall
+    msgbox("The rift shimmers...")
+    setvar(VAR_WORLD_STATE, 2)
+    warpsilent(MAP_ROUTE101_FLOODED, 6, 10)
+    waitstate
+    releaseall
+}
